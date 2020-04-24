@@ -30,6 +30,8 @@
 		
 		<c:if test="${idKey eq 0}">
     	   <input type="submit" value="Register" class="btn btn-outline-primary">
+    	   <input type="reset" value="Reset" class="btn btn-outline-dark">
+    	   
 	</c:if>
 			<c:if test="${idKey gt 0}">
     	  <input type="submit" value="Update" class="btn btn-outline-primary">

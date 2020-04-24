@@ -31,10 +31,16 @@
 					<td>${user.age}</td>
 					<td>${user.userLocation}</td>
 					<td>${user.hopitalLocation}</td>
-					<td><a href="/form-handling-mvc/users/edit/${user.id}">Update</a></td>
-					<td><a href="/form-handling-mvc/users/delete/${user.id}" class="deleteRecord">Delete
+					<td><a href="/form-handling-mvc/users/edit/${user.id}" class="btn btn-info">Update</a></td>
+					<td>
+					<%-- <a href="/form-handling-mvc/users/delete/${user.id}" class="deleteRecord">Delete
 					 <span class="glyphicon glyphicon-remove"></span>
-					</a></td>
+					</a> --%>
+					<%-- <a href="/form-handling-mvc/users/delete/${user.id}" data-toggle="modal" data-target="#exampleModal">Delete
+					</a> --%>
+					
+					<a href="#" data-href="/form-handling-mvc/users/delete/${user.id}" data-toggle="modal" data-target="#confirm-delete" class="btn btn-danger">Delete</a>
+					</td>
 					
 					
 				</tr>
